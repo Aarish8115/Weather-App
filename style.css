@@ -11,13 +11,16 @@ html,
 body {
   height: 100%;
   width: 100%;
+  
+}
+
+body{
   background-image: url(/backgrounds/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 .left {
   display: flex;
   width: 30%;
@@ -99,8 +102,8 @@ body {
   margin: 20px;
 }
 
-.weather-icon i {
-  font-size: 100px;
+.weather-icon img {
+  height: 250px;
 }
 
 .temp {
@@ -177,6 +180,23 @@ hr {
   font-size: 18px;
   font-weight: 450;
 }
+.temp-max,.temp-min{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.temp-min-max{
+  gap: 20px;
+}
+.heading-temp h4{
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.max-value,.min-value{
+  font-size: 18px;
+}
 .sunrise,.sunset{
   display: flex;
   gap: 10px;
@@ -187,8 +207,10 @@ hr {
   gap: 20px;
 }
 .heading-sun h4{
+
   font-size: 18px;
   font-weight: 500;
+
 }
 .time-sunset,.time-sunrise{
   font-size: 18px;
